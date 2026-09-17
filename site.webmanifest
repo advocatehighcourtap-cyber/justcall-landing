@@ -1,0 +1,11 @@
+{
+  "name": "JustCall - Local Search India",
+  "short_name": "JustCall",
+  "description": "Find verified local businesses near you in India",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "lang": "en-IN",
+  "icons": []
+}
