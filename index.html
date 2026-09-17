@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JustCall — India's Local Search Engine | Find & Call Businesses Near You</title>
+  <meta name="description" content="JustCall helps you discover verified local businesses, services, doctors, restaurants and more. Instant call, chat & directions. Free listing for businesses." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Promo Bar -->
+  <div class="promo-bar">
+    <div class="container promo-inner">
+      <span>🔥 Free Business Listing — Get discovered by thousands of customers every day</span>
+      <a href="#list-business" class="promo-link">List Free Now →</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <span class="logo-mark">JC</span>
+        <span class="logo-text">Just<span>Call</span></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#categories">Categories</a>
+        <a href="#for-business">For Business</a>
+        <a href="#testimonials">Reviews</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-ghost" id="loginBtn">Login</button>
+        <a href="#list-business" class="btn-primary">Free Listing</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge">🇮🇳 India's Trusted Local Search</div>
+        <h1>Find local businesses,<br>services & stores <span class="highlight">near you</span></h1>
+        <p class="hero-sub">
+          Search verified ratings & reviews. Call, chat or visit with confidence.
+          Over 50 lakh+ businesses listed across India.
+        </p>
+
+        <div class="search-box">
+          <div class="search-row">
+            <div class="search-field">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              <input type="text" id="searchQuery" placeholder="What are you looking for?" autocomplete="off" />
+            </div>
+            <div class="search-field location">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <input type="text" id="searchLocation" placeholder="Location" value="Mumbai" />
+            </div>
+            <button class="search-btn" id="searchBtn">Search</button>
+          </div>
+          <div class="quick-tags">
+            <span>Popular:</span>
+            <button class="tag" data-q="Restaurants">Restaurants</button>
+            <button class="tag" data-q="Doctors">Doctors</button>
+            <button class="tag" data-q="AC Repair">AC Repair</button>
+            <button class="tag" data-q="Packers & Movers">Packers & Movers</button>
+            <button class="tag" data-q="Beauty Parlour">Beauty Parlour</button>
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>50L+</strong>
+            <span>Businesses</span>
+          </div>
+          <div class="stat">
+            <strong>2Cr+</strong>
+            <span>Monthly Users</span>
+          </div>
+          <div class="stat">
+            <strong>4.8★</strong>
+            <span>App Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <div class="app-header">
+              <span class="app-logo">JC</span>
+              <span>JustCall</span>
+            </div>
+            <div class="app-search">
+              <div class="fake-input">🔍 Dentists near me</div>
+            </div>
+            <div class="app-card">
+              <div class="app-card-top">
+                <div class="app-avatar">🦷</div>
+                <div>
+                  <div class="app-name">SmileCare Dental</div>
+                  <div class="app-meta">4.8 ★ · 1.2k reviews · Verified</div>
+                </div>
+              </div>
+              <div class="app-actions">
+                <button class="app-call">📞 Call</button>
+                <button class="app-enquire">Chat</button>
+              </div>
+            </div>
+            <div class="app-card">
+              <div class="app-card-top">
+                <div class="app-avatar">🍽️</div>
+                <div>
+                  <div class="app-name">Spice Route Kitchen</div>
+                  <div class="app-meta">4.6 ★ · 890 reviews · Open now</div>
+                </div>
+              </div>
+              <div class="app-actions">
+                <button class="app-call">📞 Call</button>
+                <button class="app-enquire">Chat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust bar -->
+  <section class="trust-bar">
+    <div class="container trust-inner">
+      <span>Trusted by leading brands & local businesses</span>
+      <div class="trust-logos">
+        <span>Swiggy</span>
+        <span>Zomato</span>
+        <span>PhonePe</span>
+        <span>Paytm</span>
+        <span>Urban Company</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Everything you need to find the right business</h2>
+        <p>Powerful search, verified information and instant connect — all in one place.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon blue">🔍</div>
+          <h3>Smart Local Search</h3>
+          <p>Find exactly what you need with powerful filters for category, rating, distance and availability.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon green">✅</div>
+          <h3>Verified Listings</h3>
+          <p>Every business is verified. Real ratings, real reviews and authentic contact details.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon orange">📞</div>
+          <h3>One-Tap Call & Chat</h3>
+          <p>Call or message businesses instantly. No more digging for phone numbers.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon purple">📍</div>
+          <h3>Directions & Timing</h3>
+          <p>Get accurate location, opening hours and live status so you never visit a closed store.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon pink">⭐</div>
+          <h3>Genuine Reviews</h3>
+          <p>Read authentic customer experiences and make confident decisions every time.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon teal">🛡️</div>
+          <h3>Safe & Trusted</h3>
+          <p>Report issues easily. We take quality and safety of listings seriously.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2>How JustCall works</h2>
+        <p>Three simple steps to find and connect with local businesses.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Search</h3>
+          <p>Type what you need and your location. Get instant, relevant results ranked by rating and distance.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Compare</h3>
+          <p>View ratings, reviews, photos, timings and contact details. Filter by what matters most to you.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Connect</h3>
+          <p>Call, chat or get directions in one tap. Visit with confidence knowing the business is verified.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <h2>Popular categories</h2>
+        <p>Explore thousands of verified businesses across every major category.</p>
+      </div>
+
+      <div class="category-grid" id="categoryGrid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- For Business -->
+  <section class="for-business" id="for-business">
+    <div class="container business-grid">
+      <div class="business-content">
+        <div class="badge light">For Business Owners</div>
+        <h2>Grow your business with JustCall</h2>
+        <p>
+          Get discovered by millions of local customers searching for services like yours.
+          Claim your free listing, respond to enquiries and turn searches into sales.
+        </p>
+        <ul class="business-benefits">
+          <li>
+            <span class="check">✓</span>
+            <div>
+              <strong>Free basic listing</strong>
+              <span>Appear in search results at no cost</span>
+            </div>
+          </li>
+          <li>
+            <span class="check">✓</span>
+            <div>
+              <strong>Verified badge</strong>
+              <span>Build trust with the verified mark</span>
+            </div>
+          </li>
+          <li>
+            <span class="check">✓</span>
+            <div>
+              <strong>Lead notifications</strong>
+              <span>Get calls & enquiries directly on your phone</span>
+            </div>
+          </li>
+          <li>
+            <span class="check">✓</span>
+            <div>
+              <strong>Analytics dashboard</strong>
+              <span>Track views, calls and conversion</span>
+            </div>
+          </li>
+        </ul>
+        <a href="#list-business" class="btn-primary btn-lg">Get Free Listing →</a>
+      </div>
+
+      <div class="business-visual">
+        <div class="dashboard-card">
+          <div class="dash-header">
+            <span>Your Business Dashboard</span>
+            <span class="dash-badge">Live</span>
+          </div>
+          <div class="dash-stats">
+            <div class="dash-stat">
+              <strong>1,284</strong>
+              <span>Profile views</span>
+            </div>
+            <div class="dash-stat">
+              <strong>96</strong>
+              <span>Calls this week</span>
+            </div>
+            <div class="dash-stat">
+              <strong>42</strong>
+              <span>Enquiries</span>
+            </div>
+          </div>
+          <div class="dash-chart">
+            <div class="bar" style="height:40%"></div>
+            <div class="bar" style="height:65%"></div>
+            <div class="bar" style="height:45%"></div>
+            <div class="bar" style="height:80%"></div>
+            <div class="bar" style="height:55%"></div>
+            <div class="bar" style="height:90%"></div>
+            <div class="bar" style="height:70%"></div>
+          </div>
+          <div class="dash-footer">Last 7 days performance</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>Loved by customers & businesses</h2>
+        <p>Real stories from people who use JustCall every day.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>“Found a reliable AC technician in under 2 minutes. Called, got the job done the same day. Super convenient!”</p>
+          <div class="author">
+            <div class="avatar">R</div>
+            <div>
+              <strong>Rahul Mehta</strong>
+              <span>Mumbai</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>“We get 30–40 quality leads every week after listing on JustCall. Best decision for our clinic.”</p>
+          <div class="author">
+            <div class="avatar">P</div>
+            <div>
+              <strong>Dr. Priya Sharma</strong>
+              <span>SmileCare Dental, Pune</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>“The verified badge and real reviews helped me choose the right packers. Highly recommend JustCall.”</p>
+          <div class="author">
+            <div class="avatar">A</div>
+            <div>
+              <strong>Ananya Reddy</strong>
+              <span>Hyderabad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta" id="list-business">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Ready to get discovered?</h2>
+        <p>List your business for free and start receiving calls & enquiries from local customers today.</p>
+        <form class="cta-form" id="listingForm">
+          <input type="text" placeholder="Business name" required />
+          <input type="tel" placeholder="Phone number" required />
+          <input type="text" placeholder="City" required />
+          <button type="submit" class="btn-primary btn-lg">Get Free Listing</button>
+        </form>
+        <p class="form-note">No credit card required · Setup takes less than 2 minutes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-mark">JC</span>
+            <span class="logo-text">Just<span>Call</span></span>
+          </a>
+          <p>India's trusted local search engine. Find verified businesses, call instantly and grow your business.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <a href="#">About us</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4>For Users</h4>
+          <a href="#">Search businesses</a>
+          <a href="#">Categories</a>
+          <a href="#">Download app</a>
+          <a href="#">Help center</a>
+        </div>
+        <div class="footer-links">
+          <h4>For Business</h4>
+          <a href="#list-business">Free listing</a>
+          <a href="#">Premium plans</a>
+          <a href="#">Advertise</a>
+          <a href="#">Business login</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 JustCall. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
